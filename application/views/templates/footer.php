@@ -7,7 +7,7 @@
 </div><!-- close .main-content -->
 
 <footer id="colophon" class="site-footer" role="contentinfo">
-       <div id="footer-info">
+    <div id="footer-info">
         <div class="container">
             <div class="site-info">
 				Copyright &copy;gvlads 2018 All rights reserved.
@@ -15,11 +15,12 @@
         </div>
     </div>
 
-    <script type="text/javascript" src="<?php print HTTP_JS_PATH; ?>jquery.min.js"></script>
-    <script src="<?php echo HTTP_JS_PATH; ?>jquery-ui.js"></script>
-    <script type="text/javascript" src="<?php print HTTP_JS_PATH; ?>bootstrap/bootstrap.min.js"></script>
-    <script type="text/javascript" src="<?php print HTTP_JS_PATH; ?>common.js"></script>
-    <script type="text/javascript" src="<?php print HTTP_JS_PATH; ?>toastr.min.js"></script>
+<!--    <script type="text/javascript" src="--><?php //print HTTP_JS_PATH; ?><!--jquery.min.js"></script>-->
+    <script type="text/javascript" src="/assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="/assets/js/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/js/common.js"></script>
+    <script type="text/javascript" src="/assets/js/toastr.min.js"></script>
     <script type="text/javascript" src="/application/js/main.js"></script>
 
     <?php

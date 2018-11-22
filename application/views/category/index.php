@@ -23,8 +23,8 @@ $this->load->view('templates/header');
                     <?php foreach($categories as $category) { ?>
                         <tr>
                             <td><?php echo $category['category_name']; ?></td>
-                            <td><?php echo unix_to_human($category['created_at']); ?></td>
-                            <td><?php echo unix_to_human($category['updated_at']); ?></td>
+                            <td><?php echo $category['created_at']?unix_to_human($category['created_at']):''; ?></td>
+                            <td><?php echo $category['updated_at']?unix_to_human($category['updated_at']):''; ?></td>
                             <td>
                                 <a title="Edit" href="<?php echo site_url();?>category/edit/<?php echo $category['category_id'];?>" class="btn btn-primary btn-xs"><i class="fa fa-edit"></i> </a>
                                 <a title="Delete" href="<?php echo site_url();?>category/delete/<?php echo $category['category_id'];?>" onClick="return confirm('Are you sure you want to delete?')" class="btn btn-danger btn-xs"><i class="fa fa-trash"></i></a>

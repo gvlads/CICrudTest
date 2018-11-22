@@ -23,8 +23,8 @@ $this->load->view('templates/header');
                     <?php foreach($items as $item) { ?>
                         <tr>
                             <td><?php echo $item['item_name']; ?></td>
-                            <td><?php echo unix_to_human($item['created_at']); ?></td>
-                            <td><?php echo unix_to_human($item['updated_at']); ?></td>
+                            <td><?php echo $item['created_at']?unix_to_human($item['created_at']):''; ?></td>
+                            <td><?php echo $item['updated_at']?unix_to_human($item['updated_at']):''; ?></td>
                             <td>
                                 <a title="Edit" href="<?php echo site_url();?>item/edit/<?php echo $item['item_id'];?>" class="btn btn-primary btn-xs"><i class="fa fa-edit"></i> </a>
                                 <a title="Delete" href="<?php echo site_url();?>item/delete/<?php echo $item['item_id'];?>" onClick="return confirm('Are you sure you want to delete?')" class="btn btn-danger btn-xs"><i class="fa fa-trash"></i></a>

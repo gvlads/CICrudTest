@@ -23,7 +23,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = ((array_key_exists('SERVER_PORT', $_SERVER) and $_SERVER['SERVER_PORT'] == 443) ? 'https' : 'http') . "://test.local/";
+//$config['base_url'] = ((array_key_exists('SERVER_PORT', $_SERVER) and $_SERVER['SERVER_PORT'] == 443) ? 'https' : 'http') . "://test.local/";
+$config['base_url'] = "";
 
 define('HTTP_CSS_PATH', $config['base_url'] . 'assets/css/');
 define('HTTP_IMAGES_PATH', $config['base_url'] . 'assets/images/');

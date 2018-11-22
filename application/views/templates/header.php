@@ -66,13 +66,13 @@
                     <div class="col-sm-12">
                         <ul class="nav nav-pills">
                             <li class="nav-item <?php echo $active_tab == 'categories'?'active':'';?>">
-                                <a class="nav-link" href="<?php echo site_url()?>">Categories</a>
+                                <a class="nav-link" href="/category/index">Categories</a>
                             </li>
                             <li class="nav-item <?php echo $active_tab == 'items'?'active':'';?>">
-                                <a class="nav-link" href="<?php echo site_url()?>item/index">Items</a>
+                                <a class="nav-link" href="/item/index">Items</a>
                             </li>
                             <li class="nav-item <?php echo $active_tab == 'dependencies'?'active':'';?>">
-                                <a class="nav-link" href="<?php echo site_url()?>dependencies/index">Dependencies</a>
+                                <a class="nav-link" href="/dependencies/index">Dependencies</a>
                             </li>
                         </ul>
                     </div>

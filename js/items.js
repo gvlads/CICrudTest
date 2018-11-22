@@ -17,7 +17,7 @@ var items;
         $('#groups_tree').jstree({
             'core' : {
                 'data' : {
-                    "url" : siteUrl + '/dependencies/populateCategoriesTree',
+                    "url" : '/dependencies/populateCategoriesTree',
                     "dataType" : "json" // needed only if you do not supply JSON headers
                 },
                 "themes" : {
@@ -74,7 +74,7 @@ var items;
 
                 m.dialog({
                     header: parentNode.text,
-                    url: siteUrl + 'dependencies/manageCategoryItems',
+                    url: '/dependencies/manageCategoryItems',
                     data: {'category_id': category_id},
                     before: function(data) {
                         $('#category_items').multiSelect({
@@ -88,7 +88,7 @@ var items;
                         callback: function(data) {
                             var selected_values = $('#category_items').val();
                             m.post(
-                                siteUrl + '/dependencies/updateCategoryItems',
+                                '/dependencies/updateCategoryItems',
                                 {
                                     category_id: parentNode.data.id,
                                     category_items: selected_values
@@ -124,7 +124,7 @@ var items;
 
                     // delete item from category
                     m.post(
-                        siteUrl + '/dependencies/deleteItemFromCategory',
+                        '/dependencies/deleteItemFromCategory',
                         {
                             category_id: parentNode.data.id,
                             item_id: value.data.id

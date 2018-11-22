@@ -57,3 +57,7 @@ $route['translate_uri_dashes'] = FALSE;
 $route['category/add'] = 'category/add';
 $route['category/edit/(:any)'] = 'category/edit/$1';
 $route['category/delete/(:any)'] = 'category/delete/$1';
+$route['item/index'] = 'item/index';
+$route['item/add'] = 'item/add';
+$route['item/edit/(:any)'] = 'item/edit/$1';
+$route['item/delete/(:any)'] = 'item/delete/$1';

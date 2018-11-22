@@ -17,18 +17,21 @@
 
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.1/css/responsive.dataTables.min.css">
 
-    <link rel="stylesheet" href="<?php print HTTP_CSS_PATH; ?>style.css">
-    <link rel="stylesheet" href="<?php print HTTP_CSS_PATH; ?>jquery-ui.css">
-    <link rel="stylesheet" href="<?php print HTTP_CSS_PATH; ?>jquery-ui-timepicker-addon.css">
-    <link rel="stylesheet" href="<?php print HTTP_CSS_PATH; ?>toastr.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="/assets/css/jquery-ui-timepicker-addon.css">
+    <link rel="stylesheet" href="/assets/css/toastr.min.css">
 
-    <?php
-    if (isset($this->outputData['css']) and is_array($this->outputData['css'])) {
-        foreach ($this->outputData['css'] as $css) {
-            echo '<link rel="stylesheet" href="' . base_url($css) . '">' . "\n";
-        }
-    }
-    ?>
+    <link rel="stylesheet" href="/plugins/jstree/dist/themes/default/style.min.css">
+    <link rel="stylesheet" href="/plugins/lou-multi-select/css/multi-select.css">
+
+<!--    --><?php
+//    if (isset($this->outputData['css']) and is_array($this->outputData['css'])) {
+//        foreach ($this->outputData['css'] as $css) {
+//            echo '<link rel="stylesheet" href="' . base_url($css) . '">' . "\n";
+//        }
+//    }
+//    ?>
 
 <!-- jQuery -->
 </head>

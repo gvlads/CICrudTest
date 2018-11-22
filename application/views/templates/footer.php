@@ -23,13 +23,16 @@
     <script type="text/javascript" src="/assets/js/toastr.min.js"></script>
     <script type="text/javascript" src="/application/js/main.js"></script>
 
-    <?php
-    if (isset($this->outputData['js']) and is_array($this->outputData['js'])) {
-        foreach ($this->outputData['js'] as $js) {
-            echo '<script src="' . base_url($js) . '"></script>' . "\n";
-        }
-    }
-    ?>
+<!--    --><?php
+//    if (isset($this->outputData['js']) and is_array($this->outputData['js'])) {
+//        foreach ($this->outputData['js'] as $js) {
+//            echo '<script src="' . base_url($js) . '"></script>' . "\n";
+//        }
+//    }
+//    ?>
+    <script type="text/javascript" src="/application/js/items.js"></script>
+    <script type="text/javascript" src="/plugins/jstree/dist/jstree.min.js"></script>
+    <script type="text/javascript" src="/plugins/lou-multi-select/js/jquery.multi-select.js"></script>
 
     <script>
         var site_url = "<?php echo site_url(); ?>";
